@@ -34,7 +34,10 @@ const Testimonials = () => {
       sx={{ 
         py: { xs: 6, sm: 8, md: 10 },
         px: { xs: 2, sm: 3, md: 4 },
-        backgroundColor: 'background.default'
+        background: {
+          xs: 'linear-gradient(180deg, #e3f0ff 0%, #f8fbff 100%)',
+          sm: 'linear-gradient(180deg, #e3f0ff 0%, #f8fbff 100%)'
+        }
       }} 
       id="testimonios"
     >
@@ -46,7 +49,8 @@ const Testimonials = () => {
           spacing={{ xs: 3, sm: 4 }} 
           sx={{ 
             mt: { xs: 3, sm: 4, md: 5 },
-            px: { xs: 1, sm: 2 }
+            px: { xs: 0.5, sm: 2 },
+            justifyContent: { xs: 'center', sm: 'flex-start' }
           }}
         >
           {testimonials.map((testimonial, index) => (
@@ -58,7 +62,9 @@ const Testimonials = () => {
               key={index}
               sx={{
                 display: 'flex',
-                justifyContent: 'center'
+                justifyContent: 'center',
+                maxWidth: { xs: 340, sm: 'none' },
+                mx: { xs: 'auto', sm: 0 }
               }}
             >
               <TestimonialCard {...testimonial} />

@@ -10,6 +10,11 @@ const SectionTitle = ({ children }) => {
         mb: 4,
         fontWeight: 'bold',
         position: 'relative',
+        fontSize: { xs: '2rem', sm: '2.5rem', md: '3rem' },
+        wordBreak: 'break-word',
+        overflowWrap: 'break-word',
+        px: { xs: 1, sm: 2 },
+        lineHeight: 1.15,
         '&::after': {
           content: '""',
           position: 'absolute',
