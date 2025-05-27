@@ -9,19 +9,19 @@ import imgMaria from '../../assets/images/profileImages/WhatsApp Image 2025-05-2
 const Testimonials = () => {
   const testimonials = [
     {
-      name: "Adrian Cruz",
+      name: "Anonimo",
       faculty: "Facultad de Ingeniería",
       content: "Durante mi primer año, experimenté acoso por parte de algunos compañeros. Gracias al apoyo de mis profesores y el departamento de orientación, pude superar la situación y ahora ayudo a otros estudiantes que pasan por lo mismo.",
       avatar: imgAna
     },
     {
-      name: "Carlos Martínez",
+      name: "Anonimo",
       faculty: "Facultad de Medicina",
       content: "Sufrí ciberacoso a través de redes sociales. Aprendí que guardar silencio no era la solución. Busqué ayuda y con el apoyo de la universidad, pudimos resolver la situación.",
       avatar: imgCarlos
     },
     {
-      name: "Roberto Navarro",
+      name: "Anonimo",
       faculty: "Facultad de Derecho",
       content: "Como estudiante de último año, presencié casos de acoso. Decidí formar parte del comité estudiantil contra el bullying. Juntos estamos creando un ambiente más seguro para todos.",
       avatar: imgMaria
