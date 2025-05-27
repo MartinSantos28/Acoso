@@ -1,0 +1,48 @@
+.card-manuscrita {
+  font-family: 'Indie Flower', cursive, sans-serif;
+  background: #fff;
+  border: 2.5px solid #222;
+  border-radius: 18px 24px 20px 16px/22px 18px 24px 20px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.13), 0 1.5px 0 #222;
+  padding: 18px 24px;
+  margin: 8px;
+  font-size: 1.25rem;
+  max-width: 260px;
+  min-width: 160px;
+  min-height: 60px;
+  position: absolute;
+  z-index: 10;
+  opacity: 0;
+  animation: fadeInFloat 1.2s forwards, floatCard 4s ease-in-out infinite alternate;
+}
+
+@keyframes fadeInFloat {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.95) rotate(-3deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1) rotate(0deg);
+  }
+}
+
+@keyframes floatCard {
+  0% {
+    transform: translateY(0) rotate(-2deg);
+  }
+  100% {
+    transform: translateY(-18px) rotate(2deg);
+  }
+}
+
+@media (max-width: 700px) {
+  .card-manuscrita {
+    font-size: 1rem;
+    max-width: 100px;
+    min-width: 50px;
+    min-height: 20px;
+    margin-top: 40px;
+    padding: 18px 12px 10px 12px;
+  }
+} 
